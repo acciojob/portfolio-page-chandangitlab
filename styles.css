@@ -1,2 +1,103 @@
-
 /* Your CSS Code here. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+    padding: 40px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Profile picture */
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Name */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+/* LinkedIn link */
+a {
+    display: table;
+    margin: 0 auto 35px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #3b82f6;
+}
+
+h2 {
+    color: #1d4ed8;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #526174;
+}
+
+/* Project list */
+ul {
+    padding-left: 22px;
+}
+
+li {
+    padding: 7px 0;
+    color: #475569;
+}
+
+li::marker {
+    color: #3b82f6;
+}
+
+/* Mobile-friendly design */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
